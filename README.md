@@ -1,7 +1,36 @@
 # Javascript-Algorithm
 
+
+## Node.js 백준 입출력 방법
+```javascript
+  //한 줄 입력
+  let fs = require('fs');
+  // 띄어쓰기로 구분된 값들이 배열로 input에 저장됨
+  let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+```
+
+```javascript
+// 줄바꿈으로 구분
+  let fs = require('fs');
+  let input = fs.readFileSync("/dev/stdin").toString().split("\n")
+```
+
+```javascript
+  // 만약 인풋값이 숫자라면
+  var input = fs.readFileSync("/dev/stdin").toString().split(" ")
+    .map(function(a) {
+      return +a
+    })
+```
+
+ - 출력은 console.log() 사용
+ 
 ## Javascrip 정리
 
+## 문자열
+ - 문자 n번 반복
+   > 'a'.repeat(3); // 'aaa'
+ - Array(5).join("a"); // 'aaaa' a를 n-1번 반복 (빈 요소 5개 사이에 a를 넣는 식인듯)
 
 
 ### 배열
