@@ -1,5 +1,4 @@
 let fs = require('fs')
-const internal = require('stream')
 let input = fs.readFileSync('/dev/stdin').toString()
 
 console.log(solution(input))
